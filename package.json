@@ -1,0 +1,28 @@
+{
+  "name": "CW3-ControlWallet360",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:byPedroCruzDev/CW3-ControlWallet360.git",
+  "author": "PedroCruz <contatocreed67@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev --rs --cls --ignore-watch node_modules src/server.ts",
+    "typeorm": "typeorm-ts-node-commonjs",
+    "test": "cross-env NODE_ENV=test SECRET_KEY=secret_key jest --verbose --runInBand"
+  },
+  "dependencies": {
+    "@types/cors": "^2.8.13",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-errors": "^3.1.1",
+    "jsonwebtoken": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.4.4",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.1.6"
+  }
+}
